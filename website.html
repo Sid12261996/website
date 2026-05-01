@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sneha.life — Because Normal Was Never an Option</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Serif:ital@0;1&family=Caveat:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --blush:#FCE7E0;
+    --cream:#FBF6EE;
+    --paper:#F6EDDF;
+    --pink:#E5447A;
+    --hotpink:#FF6FA1;
+    --nutella:#5C3A1E;
+    --nutella-2:#7A4A22;
+    --mint:#B8DCC4;
+    --yellow:#F4C95D;
+    --ink:#1F1410;
+    --ink-soft:#3A2A21;
+    --line:#E2C9B8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;-webkit-font-smoothing:antialiased}
+  body{overflow-x:hidden}
+  a{color:inherit}
+  .serif{font-family:'DM Serif Display',serif;font-weight:400}
+  .serif-i{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+  .hand{font-family:'Caveat',cursive}
+  .mono{font-family:'JetBrains Mono',monospace}
+  /* Paper grain */
+  .grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.35;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.5  0 0 0 0 0.4  0 0 0 0 0.3  0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+  ::selection{background:var(--pink);color:var(--cream)}
+  /* Nav */
+  .nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:6px;padding:8px;border:1px solid var(--ink);background:var(--cream);border-radius:999px;box-shadow:4px 4px 0 var(--ink)}
+  .nav a{font-size:13px;letter-spacing:.02em;padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:600}
+  .nav a:hover{background:var(--ink);color:var(--cream)}
+  .nav .dot{width:8px;height:8px;border-radius:50%;background:var(--pink);align-self:center;margin:0 4px;animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:.7}}
+
+  /* Section frame */
+  section{position:relative;z-index:2}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft)}
+  .rule{height:1px;background:var(--ink);opacity:.18}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:var(--cream);font-weight:600;font-size:14px;cursor:pointer;text-decoration:none;transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .btn.pink{background:var(--pink);border-color:var(--pink);color:#fff}
+  .btn.pink:hover{box-shadow:4px 4px 0 var(--ink);border-color:var(--ink)}
+
+  /* Tags / chips */
+  .chip{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--ink);border-radius:999px;font-size:12px;font-weight:600;background:var(--cream)}
+  .chip .sw{width:8px;height:8px;border-radius:50%}
+
+  /* Polaroid */
+  .polaroid{background:#fff;padding:14px 14px 50px;box-shadow:0 18px 30px -16px rgba(31,20,16,.35), 0 2px 0 rgba(31,20,16,.06);border:1px solid #ead7c5;position:relative}
+  .polaroid .frame{aspect-ratio:4/5;width:100%;background:var(--paper);position:relative;overflow:hidden}
+  .polaroid .cap{font-family:'Caveat',cursive;font-size:22px;line-height:1.1;color:var(--ink);position:absolute;left:14px;right:14px;bottom:14px}
+  .tape{position:absolute;width:80px;height:22px;background:rgba(244,201,93,.7);border:1px dashed rgba(31,20,16,.25);transform:rotate(-6deg);top:-10px;left:50%;margin-left:-40px;box-shadow:0 4px 8px rgba(0,0,0,.06)}
+
+  /* Stripe placeholder */
+  .stripe{position:absolute;inset:0;background:
+    repeating-linear-gradient(135deg, rgba(31,20,16,.05) 0 8px, transparent 8px 16px),
+    linear-gradient(180deg, var(--blush), var(--paper));
+    display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.12em;text-transform:uppercase;text-align:center;padding:12px}
+
+  /* Footer credits */
+  footer{padding:60px 28px 80px;text-align:center;color:var(--ink-soft)}
+  footer .heart{color:var(--pink)}
+
+  /* Section titles */
+  .h-display{font-family:'DM Serif Display',serif;font-size:clamp(40px,7vw,96px);line-height:.98;letter-spacing:-.02em}
+  .h-display em{font-family:'Instrument Serif',serif;font-style:italic;color:var(--pink);font-weight:400}
+
+  /* Helpers */
+  .stack{display:flex;flex-direction:column;gap:18px}
+  .row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+
+  .marquee{overflow:hidden;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);background:var(--ink);color:var(--cream)}
+  .marquee-track{display:flex;gap:50px;white-space:nowrap;padding:18px 0;animation:scroll 38s linear infinite;font-family:'DM Serif Display',serif;font-size:34px}
+  .marquee-track span{display:inline-flex;align-items:center;gap:50px}
+  .marquee-track i{color:var(--pink);font-style:normal}
+  @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+  /* SVG motif drift */
+  .auto-drive{position:absolute;will-change:transform}
+
+  /* Cards */
+  .card{background:var(--cream);border:1.5px solid var(--ink);border-radius:18px;padding:24px;box-shadow:6px 6px 0 var(--ink);position:relative}
+  .card.flat{box-shadow:none}
+  .card.blush{background:var(--blush)}
+  .card.mint{background:var(--mint)}
+  .card.yellow{background:var(--yellow)}
+  .card.pink{background:var(--hotpink);color:#fff}
+  .card.brown{background:var(--nutella);color:var(--cream)}
+
+  /* Form */
+  input, textarea{width:100%;background:#fff;border:1.5px solid var(--ink);border-radius:14px;padding:14px 16px;font-family:inherit;font-size:15px;color:var(--ink);outline:none}
+  input:focus, textarea:focus{box-shadow:4px 4px 0 var(--ink)}
+  label{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+
+  /* tooltip-y caret */
+  .caret{display:inline-block;width:10px;height:10px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg)}
+
+  /* responsive grid */
+  .grid{display:grid;gap:24px}
+  @media (min-width:760px){.cols-2{grid-template-columns:1fr 1fr}.cols-3{grid-template-columns:repeat(3,1fr)}.cols-4{grid-template-columns:repeat(4,1fr)}}
+  @media (max-width:759px){.nav a{font-size:11px;padding:6px 10px}.nav a.hide-sm{display:none}}
+
+  /* Confetti dots */
+  .confetti{position:absolute;border-radius:2px}
+
+  /* Modal */
+  .modal-bg{position:fixed;inset:0;background:rgba(31,20,16,.55);display:flex;align-items:center;justify-content:center;z-index:60;padding:24px}
+  .modal{background:var(--cream);max-width:760px;width:100%;max-height:85vh;overflow:auto;border:1.5px solid var(--ink);border-radius:14px;box-shadow:10px 10px 0 var(--ink)}
+
+  /* Sparkle */
+  .sparkle{position:absolute;width:14px;height:14px;background:radial-gradient(circle, var(--yellow) 30%, transparent 31%),
+    linear-gradient(45deg, transparent 46%, var(--yellow) 46% 54%, transparent 54%),
+    linear-gradient(-45deg, transparent 46%, var(--yellow) 46% 54%, transparent 54%);
+    background-blend-mode:screen;animation:twinkle 2.4s ease-in-out infinite}
+  @keyframes twinkle{0%,100%{opacity:.4;transform:scale(.7)}50%{opacity:1;transform:scale(1.1)}}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<div id="app"></div>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="src/all.jsx"></script>
+</body>
+</html>
