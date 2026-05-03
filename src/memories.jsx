@@ -8,7 +8,6 @@ function Memories(){
     { cap: "the murukku haul. you swore it would last a week. it did not.", tilt:2.2, tag:"snack·tue", h:'short' },
     { cap: "'I have nothing to wear' — taken inside the wardrobe.", tilt:-2.0, tag:"wardrobe·am", h:'tall' },
     { cap: "auto driver bhaiya — honorary family member since 2022.", tilt:1.0, tag:"friend·forever", h:'short' },
-    { cap: "you, asleep, holding the empty Nutella jar protectively.", tilt:-.6, tag:"02·17am", h:'tall' },
     { cap: "the day you wore the same dress twice. iconic. record-breaking.", tilt:2.6, tag:"never·again", h:'short' },
   ];
 

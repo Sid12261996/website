@@ -13,7 +13,7 @@ function Wishes(){
       const saved = JSON.parse(localStorage.getItem('snehaWishes') || '[]');
       const seed = saved.length ? saved : [
         { name:'Amma', msg:'Happy birthday kanna ma. Don\'t skip dinner. Eat properly. Call me.', t: Date.now()-3600000*4 },
-        { name:'Best Friend Aishu', msg:'Birthday girl!! No autos today. WE ARE TAKING MY CAR. (jk we both know what will happen.)', t: Date.now()-3600000*2 },
+        { name:'Naaz', msg:'Birthday girl!! No autos today. WE ARE TAKING MY CAR. (jk we both know what will happen.)', t: Date.now()-3600000*2 },
         { name:'Nutella Jar (anonymous)', msg:'I have served you well. Refill me.', t: Date.now()-3600000 },
       ];
       setWishes(seed);

@@ -8,49 +8,53 @@ function Terms(){
 
   const clauses = [
     {
-      n:'§1', title:'AUTO-RICKSHAW USAGE RIGHTS', summary:'Defines the inalienable right to flag down any auto.',
+      n:'§1', title:'DECLARATION OF AFFECTION', summary:'Preamble — on the nature of this document and the state of the dishes.',
       body:[
-        'The Party of the First Part (hereafter "Sneha") shall, at all times and in all weather conditions including but not limited to monsoon, post-monsoon, the brief illusion of winter, and the 11 months of summer, retain the absolute and unconditional right to summon, board, and travel by auto-rickshaw.',
-        'The Party of the Second Part (hereafter "Sidharth") hereby waives any and all objections to said auto, including objections grounded in: (a) the existence of a perfectly functional family vehicle, (b) the existence of an Uber within 90 seconds, or (c) "but it is raining."',
-        'Negotiation of fare with the auto driver shall be considered a recreational activity and shall not be interrupted, sped up, or sighed at.',
+        'I, the Husband, being of sound mind and slightly sore hands from washing dishes, hereby declare my unconditional love for My Darling. This document is not a complaint. It is a testament. A love language in legal format, because she will only read it if it looks official.',
+        '— I genuinely love her. I just also genuinely wash a lot of vessels.',
       ]
     },
     {
-      n:'§2', title:'NUTELLA WAFFLE DELIVERY OBLIGATIONS', summary:'Specifies hours, jar quantity, and toppings.',
+      n:'§2', title:'THE VESSEL WASHING AGREEMENT', summary:'On the quiet, seamless, and fully undocumented transfer of domestic duties.',
       body:[
-        'Sidharth shall maintain a minimum of two (2) sealed jars of Nutella on the premises at all times. One jar shall be designated "the active jar"; the second shall be a strategic reserve, untouched, like a heart in a glass case.',
-        'Between the hours of 22:00 and 03:00 (hereafter "the Witching Window"), if Sneha articulates a craving — verbally, telepathically, or via that particular look — Sidharth shall procure or prepare one (1) Nutella waffle within forty-five (45) minutes.',
-        'The waffle shall be: warm, generously sauced, and delivered without commentary on caloric content, frequency, or "didn\'t you have one yesterday."',
+        'My Darling did, at various points in our marriage, propose a fair division of labour — she would wash all vessels in exchange for being relieved of cooking duties. The Husband accepted in good faith.',
+        'Over time, however, this responsibility was quietly, seamlessly, and without formal notice transferred to him via the advanced technique of simply not doing it, accompanied by a very peaceful expression. The Husband is now the de facto vessel-washing department and has made peace with this. The vessels are clean. We move on.',
       ]
     },
     {
-      n:'§3', title:'MURUKKU & CHIPS CONSUMPTION POLICY', summary:'On the inalienable right to crunch alongside any meal.',
+      n:'§3', title:'THE BITING AGREEMENT', summary:'On elevated happiness and its entirely affectionate physical expressions.',
       body:[
-        'Murukku, ribbon pakoda, kara sev, and any crunchy savoury circular product (collectively "the Crunch") shall be permitted as a side dish to any main course, including but not limited to: biryani, pasta, soup, dessert, breakfast cereal, and other crunchy items.',
-        'Sidharth shall not, under any circumstance, finish the last piece in the bag without first verifying — with eye contact and verbal confirmation — that Sneha does not want it. He has tried this once. He will not try it again.',
+        'My Darling reserves and actively exercises the right to bite the Husband upon experiencing elevated levels of happiness, affection, or general delight.',
+        'The Husband acknowledges that being bitten is, in fact, a privilege — it means she is happy, and he would not trade it. He shall take all reasonable steps to keep My Darling in a state of joy so as to remain within biting range. A wife who bites is a wife who loves. This is now a core marital KPI.',
       ]
     },
     {
-      n:'§4', title:'HANDBAG ACQUISITION BUDGET', summary:'There is no budget. The clause exists for legal completeness.',
+      n:'§4', title:'THE MOBILITY AND BODY ACTIVITY CLAUSE', summary:'On sovereign rights to comfortable horizontal existence.',
       body:[
-        'No upper limit is hereby established for the procurement of handbags, totes, slings, clutches, crossbodies, satchels, or any item that holds other items.',
-        'Sidharth shall not utter, suggest, or imply the phrase "do you really need another one." This phrase is, by mutual agreement, deleted from the marital vocabulary, retroactive to 2019.',
-        'Storage solutions for new handbags shall be Sidharth\'s sole responsibility. The closet shall expand as required.',
+        'My Darling has an established and well-documented preference for remaining seated or in horizontal position, or otherwise comfortable at any given hour of the day, and the Husband recognises this as her sovereign right as Queen of the Household.',
+        'Voluntary movement may occur at her own discretion — known triggers include food being ready, a good show ending, or the Husband failing to find something directly in front of him. All other requests for movement shall be submitted with patience and low expectations.',
       ]
     },
     {
-      n:'§5', title:'WARDROBE & DRESS HOARDING RIGHTS', summary:'On the legitimacy of "I have nothing to wear."',
+      n:'§5', title:'THE SENSIBLE STATEMENT DOCTRINE', summary:'All statements issued by My Darling are binding, valid, and well-reasoned.',
       body:[
-        'The statement "I have nothing to wear" shall be treated as a declaration of mood, not a description of inventory. No counter-evidence (e.g. gesturing at the visibly overflowing wardrobe) shall be admissible.',
-        'Sidharth\'s only sanctioned response is: a thoughtful pause, followed by "what mood are we going for?" The follow-up suggestion of "the pink one" is permitted and statistically successful.',
+        'All statements issued by My Darling are, by marital law, to be received as sensible, thoughtful, and well-reasoned regardless of their apparent relationship to logic, physics, or established fact.',
+        'Upon receiving any such statement, the Husband shall nod thoughtfully, respond with "that makes sense," and under no circumstances say "how? It won\'t work." The Husband has accepted this protocol entirely. It has saved him many evenings. She has also, on multiple occasions, turned out to be right. He has stopped questioning.',
       ]
     },
     {
-      n:'§6', title:'GENERAL CLAUSES', summary:'Hugs, laughter, and other miscellaneous obligations.',
+      n:'§6', title:'THE TIGHT TIMELINE PROTOCOL', summary:'On plans of remarkable ambition and physics-optional deadlines.',
       body:[
-        'Sidharth shall, in perpetuity, find Sneha\'s laugh to be the funniest sound on earth. He shall continue to laugh at her jokes even when he has heard them. Especially when he has heard them.',
-        'No clause in this document shall be interpreted strictly. The entire document is a love letter wearing a tie.',
-        'This agreement is governed by the laws of our home, our jokes, and our shared Google Calendar. It supersedes all previous agreements except the original one made on the day we met.',
+        'My Darling is a visionary who regularly devises plans of remarkable ambition to be completed within timeframes that politely ignore the laws of time, traffic, and human biology — presented each time with supreme confidence and zero doubt.',
+        'The Husband shall express enthusiasm, ask no logistical questions, and begin getting ready immediately since that buffer will be needed. In the event the plan does not succeed, contributing factors shall be recorded as traffic, other people, and the general unreliability of the external world. The plan itself shall be remembered as excellent.',
+      ]
+    },
+    {
+      n:'§7', title:'FINAL DECLARATION', summary:'The one right that supersedes all others — to love her exactly as she is.',
+      body:[
+        'The Husband retains one right above all others — to love My Darling exactly as she is: vessel-delegating, bite-happy, throne-guarding, timeline-optimistic, and gloriously, entirely herself.',
+        'He signed up for all of this. He would sign up again, immediately, without reading the fine print. My Darling is the best thing to have ever happened to him — chaos, bite marks, dishes, impossible timelines, and all.',
+        'This document is binding in the court of love and in no other court. Drafted with devotion, a little exhaustion, and a whole lot of affection. To My Darling — who will probably delegate reading this too. I love you anyway.',
       ]
     },
   ];
