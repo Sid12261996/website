@@ -109,7 +109,7 @@ function Wishes(){
             <div className="stack" style={{gap:14}}>
               <div>
                 <label>Your name</label>
-                <input value={name} onChange={e=>setName(e.target.value)} placeholder="amma / aishu / waffle guy / ..." style={{marginTop:6}}/>
+                <input value={name} onChange={e=>setName(e.target.value)} placeholder="amma / naz / waffle guy / ..." style={{marginTop:6}}/>
               </div>
               <div>
                 <label>Your wish</label>
