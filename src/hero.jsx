@@ -30,7 +30,7 @@ function Hero(){
   const autoX = Math.min(scroll * 1.6, 2000);
 
   return (
-    <section id="home" style={{position:'relative', minHeight:'100vh', paddingTop:120, paddingBottom:60, overflow:'hidden'}}>
+    <section id="home" style={{position:'relative', minHeight:'100vh', paddingTop:120, paddingBottom:60, overflow:'hidden', background:'radial-gradient(ellipse 90% 55% at 50% -5%, rgba(229,68,122,.08) 0%, transparent 65%), radial-gradient(ellipse 60% 50% at 85% 90%, rgba(244,201,93,.10) 0%, transparent 55%), radial-gradient(ellipse 50% 40% at 10% 80%, rgba(184,220,196,.12) 0%, transparent 50%)'}}>
       {/* corner sparkles */}
       <div className="sparkle" style={{top:140,left:'8%'}}></div>
       <div className="sparkle" style={{top:260,right:'10%',animationDelay:'.6s'}}></div>
@@ -57,7 +57,7 @@ function Hero(){
         <h1 className="h-display" style={{maxWidth:1100, margin:'0 0 14px'}}>
           Happy Birthday,<br/>
           <em>Sneha</em> — patron saint<br/>
-          of <em>autos</em>, <em>waffles</em><br/>
+          of <em>autos</em>, <em>murukku</em><br/>
           &amp; <em>too many handbags</em>.
         </h1>
 
