@@ -50,7 +50,7 @@ section{position:relative;z-index:2}
 /* Polaroid */
 .polaroid{background:#fff;padding:14px 14px 50px;box-shadow:0 18px 30px -16px rgba(31,20,16,.35), 0 2px 0 rgba(31,20,16,.06);border:1px solid #ead7c5;position:relative}
 .polaroid .frame{aspect-ratio:4/5;width:100%;background:var(--paper);position:relative;overflow:hidden}
-.polaroid .cap{font-family:'Caveat',cursive;font-size:22px;line-height:1.1;color:var(--ink);position:absolute;left:14px;right:14px;bottom:14px}
+.polaroid .cap{font-family:'Caveat',cursive;font-size:22px;line-height:1.1;color:var(--ink);position:absolute;left:14px;right:14px;word-break: break-all;}
 .tape{position:absolute;width:80px;height:22px;background:rgba(244,201,93,.7);border:1px dashed rgba(31,20,16,.25);transform:rotate(-6deg);top:-10px;left:50%;margin-left:-40px;box-shadow:0 4px 8px rgba(0,0,0,.06)}
 
 /* Stripe placeholder */

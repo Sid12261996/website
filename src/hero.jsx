@@ -86,14 +86,7 @@ function Hero(){
             <div className="polaroid" style={{transform:'rotate(-1.4deg)', maxWidth:680}}>
               <div className="tape"></div>
               <div className="frame">
-                <div className="stripe">
-                  <div>
-                    <div style={{fontSize:14,letterSpacing:'.2em', marginBottom:6}}>[ DROP A PHOTO HERE ]</div>
-                    <div style={{textTransform:'none', fontSize:12, opacity:.7, letterSpacing:'.04em'}}>
-                      golden-hour shot of Sneha · 4:5 · ~1200×1500px
-                    </div>
-                  </div>
-                </div>
+                <img src="/images/hero/golden-hour.jpeg" alt="golden-hour shot of Sneha" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
               </div>
               <div className="cap">
                 the only person who can say <i>"five more minutes"</i> for forty-five.
@@ -104,12 +97,7 @@ function Hero(){
             <div className="polaroid" style={{position:'absolute', right:-10, bottom:-30, width:200, transform:'rotate(6deg)'}}>
               <div className="tape" style={{background:'rgba(229,68,122,.45)'}}></div>
               <div className="frame" style={{aspectRatio:'1/1'}}>
-                <div className="stripe" style={{fontSize:9}}>
-                  <div>
-                    <Auto size={70}/>
-                    <div style={{marginTop:4}}>auto · candid</div>
-                  </div>
-                </div>
+                <img src="/images/hero/auto-candid.jpeg" alt="auto candid" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
               </div>
               <div className="cap" style={{fontSize:18}}>her ride or die ✦</div>
             </div>

@@ -2,14 +2,14 @@
 
 function Memories(){
   const items = [
-    { cap: "the time you negotiated an auto fare for 11 minutes to save ₹15.", tilt:-2.4, tag:"auto·08:42pm", h:'tall' },
-    { cap: "exhibit B: the legendary midnight waffle, photographed against your will.", tilt:1.6, tag:"waffle·12:14am", h:'short' },
-    { cap: "you said 'just one shop' and we left four hours later, with three handbags.", tilt:-1.1, tag:"shopping·sat", h:'tall' },
-    { cap: "the murukku haul. you swore it would last a week. it did not.", tilt:2.2, tag:"snack·tue", h:'short' },
-    { cap: "'I have nothing to wear' — taken inside the wardrobe.", tilt:-2.0, tag:"wardrobe·am", h:'tall' },
-    { cap: "auto driver bhaiya — honorary family member since 2022.", tilt:1.0, tag:"friend·forever", h:'short' },
-    { cap: "you, asleep, holding the empty Nutella jar protectively.", tilt:-.6, tag:"02·17am", h:'tall' },
-    { cap: "the day you wore the same dress twice. iconic. record-breaking.", tilt:2.6, tag:"never·again", h:'short' },
+    { cap: "the time you negotiated an auto fare for 11 minutes to save ₹15.", tilt:-2.4, tag:"auto·08:42pm", h:'tall', img:'/images/memories/auto-negotiation.jpeg' },
+    { cap: "exhibit B: the legendary midnight waffle, photographed against your will.", tilt:1.6, tag:"waffle·12:14am", h:'short', img:'/images/memories/midnight-waffle.jpeg' },
+    { cap: "you said 'just one shop' and we left four hours later, with three handbags.", tilt:-1.1, tag:"shopping·sat", h:'tall', img:'/images/memories/shopping-bags.jpeg' },
+    { cap: "the murukku haul. you swore it would last a week. it did not.", tilt:2.2, tag:"snack·tue", h:'short', img:'/images/memories/murukku-haul.jpeg' },
+    { cap: "'I have nothing to wear' — taken inside the wardrobe.", tilt:-2.0, tag:"wardrobe·am", h:'tall', img:'/images/memories/wardrobe.jpeg' },
+    { cap: "fifth coffee of the day. it was 10 a.m. she was not sorry.", tilt:1.0, tag:"coffee·always", h:'short', img:'/images/memories/coffee-obs.jpeg' },
+    { cap: "you, asleep, holding the empty Nutella jar protectively.", tilt:-.6, tag:"02·17am", h:'tall', img:'/images/memories/nutella-sleep.jpeg' },
+    { cap: "the day you wore the same dress twice. iconic. record-breaking.", tilt:2.6, tag:"never·again", h:'short', img:'/images/memories/same-dress.jpeg' },
   ];
 
   return (
@@ -42,12 +42,7 @@ function Memories(){
               >
                 <div className="tape" style={{background:i%2 ? 'rgba(229,68,122,.45)' : 'rgba(244,201,93,.7)'}}></div>
                 <div className="frame" style={{aspectRatio: it.h==='tall' ? '4/5' : '1/1'}}>
-                  <div className="stripe">
-                    <div>
-                      <div style={{fontSize:11, letterSpacing:'.2em'}}>[ PHOTO ]</div>
-                      <div style={{textTransform:'none', fontSize:10, opacity:.7, marginTop:4, letterSpacing:'.04em'}}>{it.tag}</div>
-                    </div>
-                  </div>
+                  <img src={it.img} alt={it.tag} style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
                 </div>
                 <div className="cap">{it.cap}</div>
               </div>
@@ -57,13 +52,7 @@ function Memories(){
             <div className="polaroid" style={{transform:'rotate(-1.2deg)', background:'var(--ink)', color:'var(--cream)'}}>
               <div className="tape" style={{background:'rgba(184,220,196,.6)'}}></div>
               <div className="frame" style={{aspectRatio:'4/5', background:'#2a1d18'}}>
-                <div className="stripe" style={{background:'repeating-linear-gradient(135deg, rgba(255,255,255,.06) 0 8px, transparent 8px 16px), linear-gradient(180deg, #2a1d18, #1F1410)', color:'#d9bfa7'}}>
-                  <div>
-                    <div style={{fontSize:32}}>▶</div>
-                    <div style={{marginTop:8, fontSize:11, letterSpacing:'.2em'}}>[ VIDEO PLACEHOLDER ]</div>
-                    <div style={{textTransform:'none', fontSize:10, opacity:.7, marginTop:4}}>that one where you laughed for 4 minutes straight</div>
-                  </div>
-                </div>
+                <img src="/images/memories/video-thumbnail.jpeg" alt="video thumbnail" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
               </div>
               <div className="cap" style={{color:'#fff'}}>insert your funniest 30 seconds here.</div>
             </div>
