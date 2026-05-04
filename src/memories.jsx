@@ -52,7 +52,7 @@ function Memories(){
             <div className="polaroid" style={{transform:'rotate(-1.2deg)', background:'var(--ink)', color:'var(--cream)'}}>
               <div className="tape" style={{background:'rgba(184,220,196,.6)'}}></div>
               <div className="frame" style={{aspectRatio:'4/5', background:'#2a1d18'}}>
-                <img src="/images/memories/video-thumbnail.jpeg" alt="video thumbnail" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
+                <video src="/images/memories/funny-video.mp4" controls style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
               </div>
               <div className="cap" style={{color:'#fff'}}>insert your funniest 30 seconds here.</div>
             </div>
