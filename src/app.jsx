@@ -45,6 +45,15 @@ function Footer(){
         <p className="serif-i" style={{fontSize:20, color:'var(--ink-soft)', margin:'14px 0 0', lineHeight:1.5}}>
           sneha.life · a tiny corner of the internet entirely about one person, by one person who is, all things considered, very lucky.
         </p>
+        <div style={{margin:'28px 0 0', padding:'20px 24px', background:'var(--blush)', border:'1.5px solid var(--ink)', borderRadius:14, display:'inline-block', textAlign:'left'}}>
+          <div className="mono" style={{fontSize:10, letterSpacing:'.22em', textTransform:'uppercase', color:'var(--ink-soft)', marginBottom:8}}>special thanks</div>
+          <div className="hand" style={{fontSize:24, color:'var(--ink)', lineHeight:1.3}}>
+            Suma chechi ✦
+          </div>
+          <p style={{margin:'6px 0 0', fontSize:14, lineHeight:1.6, color:'var(--ink-soft)'}}>
+            for the roast ideas, the content brainstorming, and being personally responsible for making this website at least 40% funnier than it had any right to be. sneha is lucky to have you. so is this website.
+          </p>
+        </div>
         <div className="mono" style={{fontSize:11, letterSpacing:'.22em', textTransform:'uppercase', marginTop:24, color:'var(--ink-soft)'}}>
           © {new Date().getFullYear()} · sidharth × sneha · all rights and wrongs reserved
         </div>

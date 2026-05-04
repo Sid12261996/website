@@ -13,7 +13,7 @@ function Wishes(){
       const saved = JSON.parse(localStorage.getItem('snehaWishes') || '[]');
       const seed = saved.length ? saved : [
         { name:'Amma', msg:'Happy birthday kanna ma. Don\'t skip dinner. Eat properly. Call me.', t: Date.now()-3600000*4 },
-        { name:'Naaz', msg:'Birthday girl!! No autos today. WE ARE TAKING MY CAR. (jk we both know what will happen.)', t: Date.now()-3600000*2 },
+        { name:'Best Friend Naaz', msg:'Birthday girl!! No autos today. WE ARE TAKING MY CAR. (jk we both know what will happen.)', t: Date.now()-3600000*2 },
         { name:'Nutella Jar (anonymous)', msg:'I have served you well. Refill me.', t: Date.now()-3600000 },
       ];
       setWishes(seed);
@@ -109,7 +109,7 @@ function Wishes(){
             <div className="stack" style={{gap:14}}>
               <div>
                 <label>Your name</label>
-                <input value={name} onChange={e=>setName(e.target.value)} placeholder="amma / naz / waffle guy / ..." style={{marginTop:6}}/>
+                <input value={name} onChange={e=>setName(e.target.value)} placeholder="amma / aishu / waffle guy / ..." style={{marginTop:6}}/>
               </div>
               <div>
                 <label>Your wish</label>

@@ -44,14 +44,7 @@ function About(){
             <div className="polaroid" style={{transform:'rotate(-2deg)', maxWidth:380}}>
               <div className="tape"></div>
               <div className="frame">
-                <div className="stripe">
-                  <div>
-                    <div style={{fontSize:13,letterSpacing:'.2em'}}>[ PORTRAIT ]</div>
-                    <div style={{textTransform:'none',fontSize:11,opacity:.7,marginTop:4}}>
-                      Sneha · 4:5 · personal photo
-                    </div>
-                  </div>
-                </div>
+                <img src="/images/about/portrait.jpeg" alt="Sneha portrait" style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
               </div>
               <div className="cap">my whole entire universe (and her three handbags).</div>
             </div>
