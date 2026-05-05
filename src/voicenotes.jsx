@@ -1,12 +1,15 @@
 import { useRef, useState, useEffect } from 'react';
 
 // Drop any .mp3 into src/audios/ — it appears here automatically
-const audioModules = import.meta.glob('./audios/*.mp3', { eager: true, query: '?url', import: 'default' });
+const audioModules = import.meta.glob('./audios/*.{mp3,aac,mp4}', { eager: true, query: '?url', import: 'default' });
+
+const MIME = { mp3: 'audio/mpeg', aac: 'audio/aac', mp4: 'audio/mp4' };
 
 const VOICE_NOTES = Object.entries(audioModules).map(([path, url]) => {
-  const filename = path.split('/').pop().replace('.mp3', '');
-  const name = filename.split('(')[0].trim(); // strip "(naatinn)" suffixes etc.
-  return { name, url };
+  const file = path.split('/').pop();
+  const ext  = file.split('.').pop();
+  const name = file.replace(`.${ext}`, '');
+  return { name, url, type: MIME[ext] ?? `audio/${ext}` };
 });
 
 const COLORS = ['blush', 'mint', 'yellow'];
@@ -19,7 +22,7 @@ function fmt(s) {
   return `${m}:${sec.toString().padStart(2, '0')}`;
 }
 
-function VoiceCard({ name, url, color, tilt }) {
+function VoiceCard({ name, url, type, color, tilt }) {
   const audioRef = useRef(null);
   const [playing, setPlaying]   = useState(false);
   const [current, setCurrent]   = useState(0);
@@ -54,7 +57,7 @@ function VoiceCard({ name, url, color, tilt }) {
       style={{ transform: `rotate(${tilt}deg)` }}
       {...(playing ? { 'data-playing': '' } : {})}
     >
-      <audio ref={audioRef} src={url} preload="metadata" />
+      <audio ref={audioRef} preload="metadata"><source src={url} type={type} /></audio>
       <div className="hand" style={{ fontSize: 26, marginBottom: 16 }}>
         from {label} ♡
       </div>
@@ -83,11 +86,12 @@ export default function VoiceNotes() {
           voice notes<br /><em>from the tribe</em>
         </h2>
         <div className="voice-grid">
-          {VOICE_NOTES.map(({ name, url }, i) => (
+          {VOICE_NOTES.map(({ name, url, type }, i) => (
             <VoiceCard
               key={url}
               name={name}
               url={url}
+              type={type}
               color={COLORS[i % COLORS.length]}
               tilt={TILTS[i % TILTS.length]}
             />
