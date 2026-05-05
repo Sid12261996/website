@@ -54,7 +54,7 @@ function Memories(){
               <div className="frame" style={{aspectRatio:'4/5', background:'#2a1d18'}}>
                 <video src="/images/memories/funny-video.mp4" controls style={{width:'100%',height:'100%',objectFit:'cover',display:'block'}}/>
               </div>
-              <div className="cap" style={{color:'#fff'}}>insert your funniest 30 seconds here.</div>
+              <div className="cap" style={{color:'#fff'}}>the video that made everyone stop mid-scroll. you know which one.</div>
             </div>
           </div>
         </div>
