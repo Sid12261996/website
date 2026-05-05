@@ -3,6 +3,7 @@
 import Hero from './hero.jsx';
 import About from './about.jsx';
 import Memories from './memories.jsx';
+import VoiceNotes from './voicenotes.jsx';
 import Mission from './mission.jsx';
 import Testimonials from './testimonials.jsx';
 import Terms from './terms.jsx';
@@ -71,10 +72,11 @@ function App(){
         <div data-screen-label="02 About"><About /></div>
         <Marquee />
         <div data-screen-label="03 Memories"><Memories /></div>
-        <div data-screen-label="04 Mission"><Mission /></div>
-        <div data-screen-label="05 Testimonials"><Testimonials /></div>
-        <div data-screen-label="06 Terms"><Terms /></div>
-        <div data-screen-label="07 Letter & Wishes"><Wishes /></div>
+        <div data-screen-label="04 Voice Notes"><VoiceNotes /></div>
+        <div data-screen-label="05 Mission"><Mission /></div>
+        <div data-screen-label="06 Testimonials"><Testimonials /></div>
+        <div data-screen-label="07 Terms"><Terms /></div>
+        <div data-screen-label="08 Letter & Wishes"><Wishes /></div>
       </main>
       <Footer />
     </>
